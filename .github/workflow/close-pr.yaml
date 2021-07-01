@@ -1,0 +1,19 @@
+name: Close Pull Request
+
+on:
+  pull_request:
+    types:
+      - labeled
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Close Pull
+      if: contains(github.event.pull_request.labels.*.name, 'size/XL')
+      uses: peter-evans/close-pull@v1
+      with:
+        comment: |
+          This Pull Request is XL!
+          Please create smaller PRs and submit again.
+          Thanks!
