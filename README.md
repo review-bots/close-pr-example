@@ -17,4 +17,4 @@ This example closes `XL` Pull Requests, but you could change the conditions or u
 
 ## Example Pull Request
 
-[Pull Request #2](https://github.com/review-bots/close-pr-example/pull/2) shows what happens when a PR is labelled with `size/XL`.
+[Pull Request #5](https://github.com/review-bots/close-pr-example/pull/5) shows what happens when a PR is labelled with `size/XL`.
